@@ -41,7 +41,7 @@ jobs:
         kubectl apply -f nginx-deployment.yml
     - name: Details
       run: |
-        sleep 10
+        sleep 30
         kubectl get all
         kubectl get deployment
   
