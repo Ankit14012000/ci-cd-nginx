@@ -38,7 +38,7 @@ jobs:
 
     - name: Apply kubernetes
       run: |
-        kubectl create -f nginx-deployment.yml
+        kubectl apply -f nginx-deployment.yml
     - name: Details
       run: |
         sleep 10
