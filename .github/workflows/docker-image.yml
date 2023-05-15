@@ -39,6 +39,7 @@ jobs:
     - name: Apply Kubernetes manifest
       run: |
         kubectl create -f nginx-deployment.yml
+        kubectl get pods
         kubectl get deployment
     
   
