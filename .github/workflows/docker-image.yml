@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker imagedocker run -d -p 80:80 nginx
 
       run: docker build . --file dockerfile --tag nginx-new
-           docker run -d -p 80:80 nginx
+           
 
       
     - name: Log in to Docker registry
