@@ -32,7 +32,6 @@ jobs:
     
     - uses: actions/checkout@v2
     - name: Start minikube
-    
     - name: Deploy to minikube
       run: kubectl apply -f nginx-deployment.yml
     
