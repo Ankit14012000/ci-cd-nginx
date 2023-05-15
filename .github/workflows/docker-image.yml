@@ -29,10 +29,19 @@ jobs:
       run: |
         docker tag nginx:latest ankit1400/nginx-new
         docker push ankit1400/nginx-new
+        
+    - name: Set up Minikube
+      uses: azure/setup-minikube@v1
+      with:
+        minikube-version: latest
+        kubectl-version: latest
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Apply Kubernetes manifest
+      run: |
+        kubectl apply -f nginx-deployment.yml
     
-    - name: Start minikube
-    - name: Deploy to minikube
-      run:
-        kubectl create -f nginx-deployment.yml
   
           
