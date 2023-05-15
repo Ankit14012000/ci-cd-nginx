@@ -30,7 +30,7 @@ jobs:
         docker tag nginx:latest ankit1400/nginx-new
         docker push ankit1400/nginx-new
     
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Start minikube
   
           
