@@ -27,8 +27,8 @@ jobs:
       
     - name: Push Docker image
       run: |
-        docker tag nginx:latest ankit1400/nginx-new
-        docker push ankit1400/nginx-new:latest
+        docker tag nginx-new:latest ankit1400/nginx-new
+        docker push ankit1400/nginx-new
         
     - name: Set up Minikube 
       run: minikube start
