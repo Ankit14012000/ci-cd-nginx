@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: ankit1400/nginx-new
+        image: ankit1400/nginx-new:latest
         ports:
         - containerPort: 80
