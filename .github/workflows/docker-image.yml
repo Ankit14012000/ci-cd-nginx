@@ -31,7 +31,7 @@ jobs:
         docker push ankit1400/nginx-new
         
     - name: Set up Minikube
-      uses: azure/setup-minikube@v1
+      uses: actions/setup-minikube@v1
       with:
         minikube-version: latest
         kubectl-version: latest
