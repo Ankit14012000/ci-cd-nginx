@@ -39,7 +39,9 @@ jobs:
     - name: Apply kubernetes
       run: |
         kubectl create -f nginx-deployment.yml
-        kubectl get deployment
+    - name: Details
+      run: |
         kubectl get pods
+        kubectl get deployment
   
           
