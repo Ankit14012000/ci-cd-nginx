@@ -30,7 +30,9 @@ jobs:
         docker tag nginx:latest ankit1400/nginx-new
         docker push ankit1400/nginx-new
     
-    - uses: actions/checkout@v4
     - name: Start minikube
+    - name: Deploy to minikube
+      run:
+        kubectl create -f nginx-deployment.yml
   
           
