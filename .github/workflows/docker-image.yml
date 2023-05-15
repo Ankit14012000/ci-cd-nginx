@@ -36,7 +36,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Apply Kubernetes manifest
+    - name: Apply kubernetes
       run: |
         kubectl create -f nginx-deployment.yml
         kubectl get pods
