@@ -39,9 +39,10 @@ jobs:
     - name: Apply kubernetes
       run: |
         kubectl apply -f nginx-deployment.yml
+        kubectl create -f service.yml
     - name: Details
       run: |
-        sleep 20
+        minikube service list
         kubectl get all
         kubectl get deployment
   
